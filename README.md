@@ -42,6 +42,32 @@ Variable name       | Description           | Example
 `DISPLAY_NUM`       | Display number        | 10
 `SCREEN_NUM`        | Screen number         | 0
 
+## Usage example
+
+Using `docker-compose`:
+
+```yaml
+version: '3.2'
+
+networks:
+  app-network:
+    driver: bridge
+
+services:
+  selenium:
+    image: 512k/chrome-in-docker:latest
+    restart: on-failure
+    environment:
+      SCREEN_WIDTH: 1440
+      SCREEN_HEIGHT: 900
+      CHROMEDRIVER_PORT: 9515
+      START_TIMEOUT: 15
+    ports:
+      - 9515
+    networks:
+      - app-network
+```
+
 ### License
 
 MIT. Use anywhere for your pleasure.
