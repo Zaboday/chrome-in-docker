@@ -10,7 +10,7 @@
 [![Issues][badge_issues]][link_issues]
 [![License][badge_license]][link_license]
 
-### What is this?
+## What is this?
 
 This is a docker image, built for running `browser` tests.
 
@@ -32,8 +32,6 @@ Tag name | Details | Full image name  | Dockerfile
 [dockerfile_latest]:https://github.com/512k/chrome-in-docker/blob/image-latest/Dockerfile
 
 ## Allowed environment variables
-
-`slack-cli` allows to use next environment variables:
 
 Variable name       | Description           | Example
 ------------------- | --------------------- | ----
