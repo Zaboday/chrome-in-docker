@@ -1,8 +1,8 @@
 <p align="center">
- <img src="https://hsto.org/webt/x9/2l/_g/x92l_ghsud0eavfxf9niqd7z978.png" width="80" alt="docker">
+  <img src="https://hsto.org/webt/dh/_1/gt/dh_1gtk1oi2ootq5laqsgmj8nfy.png" width="80" alt="chrome">
 </p>
 
-# Docker image with [fixuid][fixuid]
+# Docker image with Google Chrome
 
 [![Build][badge_automated]][link_hub]
 [![Build][badge_build]][link_hub]
