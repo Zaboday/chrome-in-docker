@@ -28,6 +28,10 @@ COPY ./etc/xvfb.init.sh /etc/init.d/xvfb
 COPY ./configs/supervisord.conf /etc/supervisor/supervisord.conf
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
+RUN set -xe \
+  && supervisord -v \
+  && chromedriver -v
+
 EXPOSE 9515
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
