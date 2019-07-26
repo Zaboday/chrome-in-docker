@@ -24,8 +24,8 @@ This image includes:
 
 ## Supported tags
 
-Tag name | Details | Full image name  | Dockerfile
-:------: | :-----: | :--------------: | :--------:
+Tag name | Details                    | Full image name                | Dockerfile
+:------: | :------------------------: | :----------------------------: | :-----------------------:
 `latest` | ![Size][badge_size_latest] | `512k/chrome-in-docker:latest` | [link][dockerfile_latest]
 `75`     | ![Size][badge_size_75]     | `512k/chrome-in-docker:76`     | [link][dockerfile_75]
 `74`     | ![Size][badge_size_74]     | `512k/chrome-in-docker:75`     | [link][dockerfile_74]
@@ -39,6 +39,8 @@ Tag name | Details | Full image name  | Dockerfile
 [dockerfile_75]:https://github.com/512k/chrome-in-docker/blob/image-75/Dockerfile
 [dockerfile_74]:https://github.com/512k/chrome-in-docker/blob/image-74/Dockerfile
 [dockerfile_73]:https://github.com/512k/chrome-in-docker/blob/image-73/Dockerfile
+
+> **Note**: Tags `73` and `74` successfully tested with [`laravel/dusk`][link_dusk] version `^3.0` (tags `75` and above does **not** works) 
 
 ## Allowed environment variables
 
@@ -89,3 +91,4 @@ MIT. Use anywhere for your pleasure.
 [link_hub]:https://hub.docker.com/r/512k/chrome-in-docker/
 [link_license]:https://github.com/512k/chrome-in-docker/blob/master/LICENSE
 [link_issues]:https://github.com/512k/chrome-in-docker/issues
+[link_dusk]:https://github.com/laravel/dusk
