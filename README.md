@@ -2,7 +2,7 @@
   <img src="https://hsto.org/webt/dh/_1/gt/dh_1gtk1oi2ootq5laqsgmj8nfy.png" width="80" alt="chrome">
 </p>
 
-# Google Chrome & ChromeDriver <sub><sup>| In Docker image</sup></sub>
+# Google Chrome & ChromeDriver <sub><sup>| In Docker container</sup></sub>
 
 [![Build][badge_automated]][link_hub]
 [![Build][badge_build]][link_hub]
