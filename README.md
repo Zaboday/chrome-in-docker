@@ -26,21 +26,30 @@ This image includes:
 
 Tag name | Details | Full image name  | Dockerfile
 :------: | :-----: | :--------------: | :--------:
-`latest` | ![Size][badge_size_latest] | `512k/chrome-in-docker` | [link][dockerfile_latest]
+`latest` | ![Size][badge_size_latest] | `512k/chrome-in-docker:latest` | [link][dockerfile_latest]
+`75`     | ![Size][badge_size_75]     | `512k/chrome-in-docker:76`     | [link][dockerfile_75]
+`74`     | ![Size][badge_size_74]     | `512k/chrome-in-docker:75`     | [link][dockerfile_74]
+`73`     | ![Size][badge_size_73]     | `512k/chrome-in-docker:74`     | [link][dockerfile_73]
 
 [badge_size_latest]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:latest.svg
+[badge_size_75]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:75.svg
+[badge_size_74]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:74.svg
+[badge_size_73]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:73.svg
 [dockerfile_latest]:https://github.com/512k/chrome-in-docker/blob/image-latest/Dockerfile
+[dockerfile_75]:https://github.com/512k/chrome-in-docker/blob/image-75/Dockerfile
+[dockerfile_74]:https://github.com/512k/chrome-in-docker/blob/image-74/Dockerfile
+[dockerfile_73]:https://github.com/512k/chrome-in-docker/blob/image-73/Dockerfile
 
 ## Allowed environment variables
 
 Variable name       | Description           | Example
-------------------- | --------------------- | ----
-`SCREEN_WIDTH`      | Screen width          | 1440
-`SCREEN_HEIGHT`     | Screen height         | 900
-`CHROMEDRIVER_PORT` | Chrome driver port    | 9515
-`START_TIMEOUT`     | Browser start timeout | 15
-`DISPLAY_NUM`       | Display number        | 10
-`SCREEN_NUM`        | Screen number         | 0
+------------------- | --------------------- | -------
+`SCREEN_WIDTH`      | Screen width          | `1440`
+`SCREEN_HEIGHT`     | Screen height         | `900`
+`CHROMEDRIVER_PORT` | Chrome driver port    | `9515`
+`START_TIMEOUT`     | Browser start timeout | `15`
+`DISPLAY_NUM`       | Display number        | `10`
+`SCREEN_NUM`        | Screen number         | `0`
 
 ## Usage example
 
