@@ -27,18 +27,27 @@ This image includes:
 Tag name | Details                    | Full image name                | Dockerfile
 :------: | :------------------------: | :----------------------------: | :-----------------------:
 `latest` | ![Size][badge_size_latest] | `512k/chrome-in-docker:latest` | [link][dockerfile_latest]
-`75`     | ![Size][badge_size_75]     | `512k/chrome-in-docker:76`     | [link][dockerfile_75]
-`74`     | ![Size][badge_size_74]     | `512k/chrome-in-docker:75`     | [link][dockerfile_74]
-`73`     | ![Size][badge_size_73]     | `512k/chrome-in-docker:74`     | [link][dockerfile_73]
+`75`     | ![Size][badge_size_75]     | `512k/chrome-in-docker:75`     | [link][dockerfile_75]
+`74`     | ![Size][badge_size_74]     | `512k/chrome-in-docker:74`     | [link][dockerfile_74]
+`73`     | ![Size][badge_size_73]     | `512k/chrome-in-docker:73`     | [link][dockerfile_73]
+`72`     | ![Size][badge_size_72]     | `512k/chrome-in-docker:72`     | [link][dockerfile_72]
+`71`     | ![Size][badge_size_71]     | `512k/chrome-in-docker:71`     | [link][dockerfile_71]
+`70`     | ![Size][badge_size_70]     | `512k/chrome-in-docker:70`     | [link][dockerfile_70]
 
 [badge_size_latest]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:latest.svg
 [badge_size_75]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:75.svg
 [badge_size_74]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:74.svg
 [badge_size_73]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:73.svg
+[badge_size_72]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:72.svg
+[badge_size_71]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:71.svg
+[badge_size_70]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:70.svg
 [dockerfile_latest]:https://github.com/512k/chrome-in-docker/blob/image-latest/Dockerfile
 [dockerfile_75]:https://github.com/512k/chrome-in-docker/blob/image-75/Dockerfile
 [dockerfile_74]:https://github.com/512k/chrome-in-docker/blob/image-74/Dockerfile
 [dockerfile_73]:https://github.com/512k/chrome-in-docker/blob/image-73/Dockerfile
+[dockerfile_72]:https://github.com/512k/chrome-in-docker/blob/image-72/Dockerfile
+[dockerfile_71]:https://github.com/512k/chrome-in-docker/blob/image-71/Dockerfile
+[dockerfile_70]:https://github.com/512k/chrome-in-docker/blob/image-70/Dockerfile
 
 > **Note**: [`laravel/dusk`][link_dusk] version `^3.0` successfully tested with tags `73` and `74`. `laravel/dusk` versions `^4.0` and `^5.0` require chrome version between `70` and `73`.
 
