@@ -40,7 +40,7 @@ Tag name | Details                    | Full image name                | Dockerf
 [dockerfile_74]:https://github.com/512k/chrome-in-docker/blob/image-74/Dockerfile
 [dockerfile_73]:https://github.com/512k/chrome-in-docker/blob/image-73/Dockerfile
 
-> **Note**: Tags `73` and `74` successfully tested with [`laravel/dusk`][link_dusk] version `^3.0` (tags `75` and above does **not** works) 
+> **Note**: [`laravel/dusk`][link_dusk] version `^3.0` successfully tested with tags `73` and `74`. `laravel/dusk` versions `^4.0` and `^5.0` require chrome version between `70` and `73`.
 
 ## Allowed environment variables
 
