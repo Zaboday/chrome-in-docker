@@ -1,6 +1,8 @@
 FROM debian:jessie-slim
 LABEL Description="Container with Google Chrome" Vendor="512k"
 
+ENV CHROMEDRIVER_MAJOR_VERSION=74
+
 RUN set -xe \
   && apt-get update \
   && apt-get -yq install --no-install-recommends \
@@ -9,7 +11,7 @@ RUN set -xe \
     curl unzip \
     ca-certificates \
     fonts-ipafont-gothic xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable \
-  && CHROMEDRIVER_VERSION="`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`" \
+  && export CHROMEDRIVER_VERSION="`curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROMEDRIVER_MAJOR_VERSION`" \
   && mkdir -p /opt/chromedriver-$CHROMEDRIVER_VERSION \
   && curl -sS -o /tmp/chromedriver_linux64.zip \
     http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip \
@@ -27,6 +29,10 @@ RUN set -xe \
 COPY ./etc/xvfb.init.sh /etc/init.d/xvfb
 COPY ./configs/supervisord.conf /etc/supervisor/supervisord.conf
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
+
+RUN set -xe \
+  && supervisord -v \
+  && chromedriver -v
 
 EXPOSE 9515
 
