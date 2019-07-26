@@ -30,6 +30,7 @@ COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN set -xe \
   && supervisord -v \
+  && google-chrome-stable --version \
   && chromedriver -v
 
 EXPOSE 9515
