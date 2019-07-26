@@ -1,7 +1,12 @@
 FROM debian:jessie-slim
 LABEL Description="Container with Google Chrome" Vendor="512k"
 
-ENV CHROMEDRIVER_MAJOR_VERSION=75
+# Get latest 75.* chromedriver version here: <https://chromedriver.storage.googleapis.com/LATEST_RELEASE_75>
+# Google Chrome package: <https://github.com/webnicer/chrome-downloads/tree/master/x64.deb>
+
+ENV \
+  CHROMEDRIVER_VERSION="75.0.3770.140" \
+  CHROME_VERSION="75.0.3770.142-1"
 
 RUN set -xe \
   && apt-get update \
@@ -11,19 +16,22 @@ RUN set -xe \
     curl unzip \
     ca-certificates \
     fonts-ipafont-gothic xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable \
-  && export CHROMEDRIVER_VERSION="`curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROMEDRIVER_MAJOR_VERSION`" \
-  && mkdir -p /opt/chromedriver-$CHROMEDRIVER_VERSION \
+  && mkdir -p /opt/chromedriver-${CHROMEDRIVER_VERSION} \
   && curl -sS -o /tmp/chromedriver_linux64.zip \
-    http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip \
-  && unzip -qq /tmp/chromedriver_linux64.zip -d /opt/chromedriver-$CHROMEDRIVER_VERSION \
+    http://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip \
+  && unzip -qq /tmp/chromedriver_linux64.zip -d /opt/chromedriver-${CHROMEDRIVER_VERSION} \
   && rm /tmp/chromedriver_linux64.zip \
-  && chmod +x /opt/chromedriver-$CHROMEDRIVER_VERSION/chromedriver \
-  && ln -fs /opt/chromedriver-$CHROMEDRIVER_VERSION/chromedriver /usr/local/bin/chromedriver \
-  && curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-  && echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list \
-  && apt-get update \
-  && apt-get -yq install google-chrome-stable x11vnc \
+  && chmod +x /opt/chromedriver-${CHROMEDRIVER_VERSION}/chromedriver \
+  && ln -fs /opt/chromedriver-${CHROMEDRIVER_VERSION}/chromedriver /usr/local/bin/chromedriver \
+  && curl -S -o /tmp/google-chrome.deb \
+    https://raw.githubusercontent.com/webnicer/chrome-downloads/master/x64.deb/google-chrome-stable_${CHROME_VERSION}_amd64.deb \
+  && apt-get -yq install \
+    x11vnc \
+    fonts-liberation libappindicator3-1 libasound2 libatk-bridge2.0-0 libatk1.0-0 libatspi2.0-0 libcairo2 libcups2 \
+    libgdk-pixbuf2.0-0 libnspr4 libnss3 lsb-release wget xdg-utils \
+  && dpkg -i /tmp/google-chrome.deb \
   && apt-get -yq clean \
+  && rm -f /tmp/google-chrome.deb \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY ./etc/xvfb.init.sh /etc/init.d/xvfb
@@ -32,6 +40,7 @@ COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN set -xe \
   && supervisord -v \
+  && google-chrome-stable --version \
   && chromedriver -v
 
 EXPOSE 9515
