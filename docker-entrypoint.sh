@@ -47,7 +47,7 @@ done;
 sleep 1;
 
 # Make check - any command passed?
-if [ "null$@" = "null" ]; then
+if [ $# -eq 0 ]; then
   # Start infinite loop
   while :; do
     sleep 1;
