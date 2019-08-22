@@ -2,7 +2,7 @@
 /nbproject
 /.idea
 
-# Temp dirs & trash
+# Temp dirs & cache
 /temp
 /tmp
 .DS_Store
