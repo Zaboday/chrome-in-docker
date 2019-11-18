@@ -27,6 +27,7 @@ This image includes:
 Tag name | Details                    | Full image name                | Dockerfile
 :------: | :------------------------: | :----------------------------: | :-----------------------:
 `latest` | ![Size][badge_size_latest] | `512k/chrome-in-docker:latest` | [link][dockerfile_latest]
+`77`     | ![Size][badge_size_77]     | `512k/chrome-in-docker:77`     | [link][dockerfile_77]
 `76`     | ![Size][badge_size_76]     | `512k/chrome-in-docker:76`     | [link][dockerfile_76]
 `75`     | ![Size][badge_size_75]     | `512k/chrome-in-docker:75`     | [link][dockerfile_75]
 `74`     | ![Size][badge_size_74]     | `512k/chrome-in-docker:74`     | [link][dockerfile_74]
@@ -36,6 +37,7 @@ Tag name | Details                    | Full image name                | Dockerf
 `70`     | ![Size][badge_size_70]     | `512k/chrome-in-docker:70`     | [link][dockerfile_70]
 
 [badge_size_latest]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:latest.svg
+[badge_size_77]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:77.svg
 [badge_size_76]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:76.svg
 [badge_size_75]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:75.svg
 [badge_size_74]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:74.svg
@@ -44,6 +46,7 @@ Tag name | Details                    | Full image name                | Dockerf
 [badge_size_71]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:71.svg
 [badge_size_70]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:70.svg
 [dockerfile_latest]:https://github.com/512k/chrome-in-docker/blob/image-latest/Dockerfile
+[dockerfile_77]:https://github.com/512k/chrome-in-docker/blob/image-77/Dockerfile
 [dockerfile_76]:https://github.com/512k/chrome-in-docker/blob/image-76/Dockerfile
 [dockerfile_75]:https://github.com/512k/chrome-in-docker/blob/image-75/Dockerfile
 [dockerfile_74]:https://github.com/512k/chrome-in-docker/blob/image-74/Dockerfile
