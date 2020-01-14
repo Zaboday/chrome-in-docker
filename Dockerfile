@@ -6,7 +6,7 @@ LABEL Description="Container with Google Chrome" Vendor="512k"
 
 ENV \
   CHROMEDRIVER_VERSION="79.0.3945.36" \
-  CHROME_VERSION="79.0.3945.79-1"
+  CHROME_VERSION="79.0.3945.117-1"
 
 RUN set -xe \
   && apt-get update \
