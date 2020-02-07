@@ -1,12 +1,12 @@
 FROM debian:jessie-slim
 LABEL Description="Container with Google Chrome" Vendor="512k"
 
-# Get latest 79.* chromedriver version here: <https://chromedriver.storage.googleapis.com/LATEST_RELEASE_79>
+# Get latest 80.* chromedriver version here: <https://chromedriver.storage.googleapis.com/LATEST_RELEASE_80>
 # Google Chrome package: <https://github.com/webnicer/chrome-downloads/tree/master/x64.deb>
 
 ENV \
-  CHROMEDRIVER_VERSION="79.0.3945.36" \
-  CHROME_VERSION="79.0.3945.117-1"
+  CHROMEDRIVER_VERSION="80.0.3987.16" \
+  CHROME_VERSION="80.0.3987.87-1"
 
 RUN set -xe \
   && apt-get update \
