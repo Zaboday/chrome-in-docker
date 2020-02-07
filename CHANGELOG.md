@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## 20.2.7
+
+### Added
+
+- Dockerfile for `80` major Chrome\ChromeDriver version
+
 ## 19.12.1
 
 ### Added
