@@ -5,8 +5,8 @@ LABEL Description="Container with Google Chrome" Vendor="512k"
 # Google Chrome package: <https://github.com/webnicer/chrome-downloads/tree/master/x64.deb>
 
 ENV \
-  CHROMEDRIVER_VERSION="80.0.3987.106" \
-  CHROME_VERSION="80.0.3987.162-1"
+  CHROMEDRIVER_VERSION="81.0.4044.69" \
+  CHROME_VERSION="81.0.4044.92-1"
 
 RUN set -xe \
   && apt-get update \
@@ -15,6 +15,7 @@ RUN set -xe \
     xvfb gconf2 \
     curl unzip \
     ca-certificates \
+    libgbm1 \
     fonts-ipafont-gothic xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable \
   && mkdir -p /opt/chromedriver-${CHROMEDRIVER_VERSION} \
   && curl -sS -o /tmp/chromedriver_linux64.zip \
