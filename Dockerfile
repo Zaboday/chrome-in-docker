@@ -5,8 +5,8 @@ LABEL Description="Container with Google Chrome" Vendor="512k"
 # Google Chrome package: <https://github.com/webnicer/chrome-downloads/tree/master/x64.deb>
 
 ENV \
-  CHROMEDRIVER_VERSION="81.0.4044.69" \
-  CHROME_VERSION="81.0.4044.129-1"
+  CHROMEDRIVER_VERSION="81.0.4044.138" \
+  CHROME_VERSION="81.0.4044.138-1"
 
 RUN set -xe \
   && apt-get update \
