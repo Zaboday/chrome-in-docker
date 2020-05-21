@@ -8,6 +8,7 @@ RUN set -xe \
     xvfb gconf2 \
     curl unzip \
     ca-certificates \
+    libgbm1 \
     fonts-ipafont-gothic xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable \
   && CHROMEDRIVER_VERSION="`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`" \
   && mkdir -p /opt/chromedriver-$CHROMEDRIVER_VERSION \
