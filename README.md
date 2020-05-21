@@ -41,20 +41,20 @@ Tag name | Details                    | Full image name                | Dockerf
 `71`     | ![Size][badge_size_71]     | `512k/chrome-in-docker:71`     | [link][dockerfile_71]
 `70`     | ![Size][badge_size_70]     | `512k/chrome-in-docker:70`     | [link][dockerfile_70]
 
-[badge_size_latest]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:latest.svg
-[badge_size_83]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:83.svg
-[badge_size_81]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:81.svg
-[badge_size_80]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:80.svg
-[badge_size_79]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:79.svg
-[badge_size_78]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:78.svg
-[badge_size_77]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:77.svg
-[badge_size_76]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:76.svg
-[badge_size_75]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:75.svg
-[badge_size_74]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:74.svg
-[badge_size_73]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:73.svg
-[badge_size_72]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:72.svg
-[badge_size_71]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:71.svg
-[badge_size_70]:https://images.microbadger.com/badges/image/512k/chrome-in-docker:70.svg
+[badge_size_latest]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/latest.svg
+[badge_size_83]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/83
+[badge_size_81]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/81.svg
+[badge_size_80]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/80.svg
+[badge_size_79]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/79.svg
+[badge_size_78]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/78.svg
+[badge_size_77]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/77.svg
+[badge_size_76]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/76.svg
+[badge_size_75]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/75.svg
+[badge_size_74]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/74.svg
+[badge_size_73]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/73.svg
+[badge_size_72]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/72.svg
+[badge_size_71]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/71.svg
+[badge_size_70]:https://img.shields.io/docker/image-size/512k/chrome-in-docker/70.svg
 [dockerfile_latest]:https://github.com/512k/chrome-in-docker/blob/image-latest/Dockerfile
 [dockerfile_83]:https://github.com/512k/chrome-in-docker/blob/image-83/Dockerfile
 [dockerfile_81]:https://github.com/512k/chrome-in-docker/blob/image-81/Dockerfile
